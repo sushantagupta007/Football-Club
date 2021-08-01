@@ -12,12 +12,14 @@ body{font-family: 'Poppins', sans-serif;}
     justify-content: center;
     align-items: center;
 }
+
 #playerCard{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
+    
 }
 .card{
     box-sizing: border-box;
@@ -45,5 +47,83 @@ body{font-family: 'Poppins', sans-serif;}
     font-size: 1.6rem;
     margin:0rem;
     line-height: 2.6rem;
+}
 
+/* Hight Light Section */
+#hightlight{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    margin-top: 8.6rem;
+    padding:4rem;
+}
+
+.highlightBox{
+    width:46.9rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.highlightImage{
+    width:56.7rem;
+    height: 42.7rem;
+   
+}
+.highlightImage img{
+    width:100%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px #6C6C6C;
+}
+.highlightTitle  {
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 6.0rem;  
+    margin:0rem 0rem 0rem 0rem;  
+}
+
+#hightlightButton{
+    width:17.3rem;
+    height:4.4rem;
+    background:#E02C6D;
+    color:#FFFFFF;
+    border: none;
+    
+}
+.highlightDescription{
+    font-size: 1.6rem;
+    color: #6C6C6C;
+    line-height: 2.8rem;
+    margin: 2rem 0rem 2rem; 
+}
+@media (max-width:576px){
+    #playerCard{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+    
+    .highlightImage{
+        width:100%;
+        height:auto;
+    }
+
+    .highlightBox{
+        width:100%;
+        height:auto;
+        margin-bottom: 1rem;
+    }
+    #hightlight{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        margin-top: 4.6rem;
+        padding:4rem;
+    }
+    .highlightTitle{
+        font-size: 3.8rem;
+    }
 }

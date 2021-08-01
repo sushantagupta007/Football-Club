@@ -17,7 +17,35 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header></header>
+    <header id="headerSection">
+        <nav>
+            <ul>
+                <div id="navLik">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">Club</a></li>
+                    <li><a href="">Upcoming Matches</a></li>
+                    <li><a href="">Contact</a></li>
+                </div>
+            </ul>
+            <div id="navButton"><a id="loginButton" href="#"> <span style="margin-right: 1rem;"><i class="fas fa-sign-in-alt"></i></span> Login</a></div>
+        </nav>
+        <section id="clubTheme">
+            <div class="clubTitle">
+                <div>
+                    <h1>Conmebol
+                        Copa America 
+                        2021
+                    </h1>
+                </div>
+                <div id="watchLiveBtnContainer"> <a href="#" id="watchLiveBtn">Watch Live <span style="margin-left: 1.0rem;"><i class="fas fa-arrow-right"></i></span> </a></div>
+            </div>
+            <div class="clubImageTheme">
+                <div class="clubImage">
+                    <img src="./Image/banner (2).png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
     <main id="mainSection">
         <section id="playerCard">
             <section class="card">
@@ -165,13 +193,28 @@
                     duis enim velit mollit. Exercitation 
                     veniam consequat sunt nostrud amet.
                 </p>
-                <button type="button" id="hightlightButton"> Watch Button <span><i class="fas fa-long-arrow-alt-right"></i></span> </button>
+                <a href="#" id="hightlightButton"> Watch Button <span style="margin-left:0.5rem"><i class="fas fa-long-arrow-alt-right"></i></span> </a>
            </div>
            <div class="highlightImage">
                 <img src="./Image/match (2).png" alt="Messi and Ronaldo Playing">
            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footerSection">
+        <div class="footerImamge">
+            <img src="./Image/Logo.png" alt="">
+        </div>
+        <div class="footerDes">
+            <div class="iconCotainer">
+                <div class="iconBox">
+                    <div class="icon"><a href=""><i class="fab fa-instagram"></i></a> </div>
+                    <div class="icon"><a href=""><i class="fab fa-twitter"></i></a> </div>
+                    <div class="icon"><a href=""><i class="fab fa-instagram"></i></a> </div>
+                    <div class="icon"><a href=""><i class="fab fa-youtube"></i></a> </div>
+                </div>
+                <p style="font-size: 1.8rem;">Copyright © 2022 Football</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

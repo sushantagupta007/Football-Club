@@ -111,6 +111,18 @@ padding:0rem;}
 .clubImage img{
     width: 100%;
 }
+
+@keyframes imageSpin {
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.clubImage img:hover {
+    animation-name: imageSpin;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    /* linear | ease | ease-in | ease-out | ease-in-out */
+    animation-timing-function: ease-in-out;
+}
 /* Main Content */
 /* Player Card Section */
 #mainSection{
